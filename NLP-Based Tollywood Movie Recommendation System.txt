@@ -1,0 +1,84 @@
+# 🎬 Emotion-Based Tollywood Movie Recommender using NLP (Uplifting Recommendations)
+
+import random
+from textblob import TextBlob
+
+def detect_emotion(text):
+    blob = TextBlob(text)
+    polarity = blob.sentiment.polarity
+    if polarity > 0.5:
+        return "happy"
+    elif polarity < -0.5:
+        return "sad"
+    elif polarity < -0.1:
+        return "fear"
+    elif polarity < 0:
+        return "angry"
+    else:
+        return "neutral"
+
+def recommend_movie(opposite_emotion):
+    movie_db = {
+        "happy": [
+            "Fidaa", "Baahubali", "Arya 2", "S/o Satyamurthy", "Race Gurram",
+            "Julayi", "Attarintiki Daredi", "Dookudu", "SVSC", "Gabbar Singh",
+            "DJ", "Bheeshma", "Nenu Local", "Sreekaram", "Pelli Choopulu"
+        ],
+        "sad": [
+            "Bommarillu", "Ninnu Kori", "Geetha Govindam", "Malli Malli Idi Rani Roju",
+            "Manasantha Nuvve", "Premam", "Orange", "Oohalu Gusagusalade",
+            "Dear Comrade", "Uppena", "Tholi Prema", "Yeto Vellipoyindhi Manasu",
+            "Love Story", "World Famous Lover"
+        ],
+        "angry": [
+            "Arjun Reddy", "Bhadra", "Temper", "Rangasthalam", "Simha",
+            "Indra", "Dhool", "Sarrainodu", "Akhanda", "Legend",
+            "Chatrapathi", "Mirchi", "Lakshyam", "Billa", "Kick"
+        ],
+        "neutral": [
+            "Eega", "1: Nenokkadine", "Karthikeya", "Gentleman", "Okkadu",
+            "A Aa", "Ready", "Mr. Perfect", "Chandamama", "Nani",
+            "Kushi", "Shatamanam Bhavati", "Hello", "Seethamma Vakitlo Sirimalle Chettu"
+        ],
+        "fear": [
+            "Avunu", "Anjali", "Geethanjali", "Prema Katha Chitram", "Raju Gari Gadhi",
+            "13B", "Mantra", "Abhinetri", "Kanchana", "Taxiwaala"
+        ]
+    }
+
+    # Recommend opposite of the user's emotion
+    emotion_opposites = {
+        "happy": "neutral",
+        "sad": "happy",
+        "angry": "calm",
+        "fear": "happy",
+        "neutral": "happy"
+    }
+
+    mapped_emotion = emotion_opposites.get(opposite_emotion, "neutral")
+    # Fallback to 'happy' if 'calm' category doesn't exist
+    if mapped_emotion == "calm":
+        mapped_emotion = "happy"
+
+    return random.sample(movie_db.get(mapped_emotion, movie_db["neutral"]), 10)
+
+# Chatbot Loop
+print("Welcome to the NLP-Based Tollywood Movie Recommendation Chatbot! 🎬")
+
+while True:
+    user_input = input("\nHi! Tell me how you're feeling today (type a sentence): ")
+    detected_emotion = detect_emotion(user_input)
+    print(f"\n🔍 Detected Emotion: {detected_emotion}")
+
+    recommended_movies = recommend_movie(detected_emotion)
+    if recommended_movies:
+        print(f"\n🎥 To uplift your mood, here are 10 Tollywood movies you might enjoy:")
+        for movie in recommended_movies:
+            print(f"- {movie}")
+    else:
+        print("\n❗ Sorry, we couldn't detect a valid emotion. Please try expressing your feelings again.")
+
+    again = input("\nWould you like another recommendation? (yes/no): ").lower()
+    if again != 'yes':
+        print("\nThank you for using the Tollywood Movie Chatbot. Enjoy your movie! 🍿")
+        break
