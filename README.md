@@ -76,8 +76,6 @@ Hi! Tell me how you're feeling today (type a sentence): I'm feeling down and str
 
 ```
 
----
-
 ## 📂 Project Structure
 
 ```
@@ -86,8 +84,6 @@ tollywood-movie-chatbot/
 ├── README.md              
 
 ```
-
----
 
 ## 🙋‍♀️ Author
 
