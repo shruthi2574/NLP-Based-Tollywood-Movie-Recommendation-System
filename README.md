@@ -41,24 +41,19 @@ python -m textblob.download_corpora
 ```
 🔧 Running the Chatbot
 
+
 1. Clone the repository:
 
    ```bash
-  git clone https://github.com/your-username/tollywood-movie-chatbot.git
-cd tollywood-movie-chatbot
-
-2. Run the Script:
-
- ```bash
-  python movie_chatbot.py
-
+   git clone https://github.com/your-username/weather-dashboard-java.git
+   cd weather-dashboard-java
+2. Run the script:
 
    
 
 ## 💡 Example Output
 
 ```
-
 Welcome to the NLP-Based Tollywood Movie Recommendation Chatbot! 🎬
 
 Hi! Tell me how you're feeling today (type a sentence): I'm feeling down and stressed.
@@ -77,8 +72,6 @@ Hi! Tell me how you're feeling today (type a sentence): I'm feeling down and str
 - Race Gurram
 - Nenu Local
 
-
-
 ```
 
 ---
@@ -86,10 +79,9 @@ Hi! Tell me how you're feeling today (type a sentence): I'm feeling down and str
 ## 📂 Project Structure
 
 ```
-tollywood-movie-chatbot/
-├── movie_chatbot.py       
-├── README.md              
-
+tollywood-movie–chartbot /
+├── movie_chartbot.py
+└── README.md
 ```
 
 ---
