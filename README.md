@@ -35,6 +35,7 @@ It recommends **movies from the opposite mood** to uplift and improve your emoti
 ```python
 !pip install textblob
 python -m textblob.download_corpora
+```
 3. Paste the chatbot code into a cell and run.. 
 
 4. Type a sentence about how you feel and receive movie suggestions!
