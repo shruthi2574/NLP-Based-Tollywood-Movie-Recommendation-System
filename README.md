@@ -1,4 +1,4 @@
-# 🎬 NLP-Based Tollywood Movie Recommendation Chatbot (Uplifting Edition)
+# 🎬 NLP-Based Tollywood Movie Recommendation Chatbot 
 
 This is a Natural Language Processing (NLP)-based command-line chatbot that recommends **Tollywood movies** to users based on their emotional state.  
 Instead of reinforcing emotions, it smartly suggests movies from the **opposite emotional category** to uplift or balance the user’s mood.
