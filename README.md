@@ -82,8 +82,6 @@ Hi! Tell me how you're feeling today (type a sentence): Still kind of low...
 - Ready
 - Athadu
 
-...
-
 
 ```
 
