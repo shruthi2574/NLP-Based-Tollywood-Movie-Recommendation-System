@@ -46,16 +46,42 @@ python -m textblob.download_corpora
 ## 💡 Example Output
 
 ```
-Hi! Tell me how you're feeling today (type a sentence): I’m very upset and heartbroken.
+Welcome to the NLP-Based Tollywood Movie Recommendation Chatbot! 🎬
+
+Hi! Tell me how you're feeling today (type a sentence): I'm feeling down and stressed.
 
 🔍 Detected Emotion: sad
 
 🎥 To uplift your mood, here are 10 Tollywood movies you might enjoy:
 - Baahubali
 - DJ
+- Gabbar Singh
 - Arya 2
 - Fidaa
+- Julayi
+- Dookudu
 - SVSC
+- Race Gurram
+- Nenu Local
+
+Would you like another recommendation? (yes)
+
+Hi! Tell me how you're feeling today (type a sentence): Still kind of low...
+
+🔍 Detected Emotion: sad
+
+🎥 Here's another list of cheerful Tollywood movies to lift your spirits:
+- Bheeshma
+- Sreekaram
+- Pelli Choopulu
+- Brindavanam
+- Ala Modalaindi
+- Shatamanam Bhavati
+- A Aa
+- Bhale Bhale Magadivoy
+- Ready
+- Athadu
+
 ...
 
 
