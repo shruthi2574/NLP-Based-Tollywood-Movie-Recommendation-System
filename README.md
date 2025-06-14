@@ -1,17 +1,17 @@
 # 🎬 NLP-Based Tollywood Movie Recommendation Chatbot 
 
-This is a Natural Language Processing (NLP)-based command-line chatbot that recommends **Tollywood movies** to users based on their emotional state.  
-Instead of reinforcing emotions, it smartly suggests movies from the **opposite emotional category** to uplift or balance the user’s mood.
+An NLP-powered chatbot that suggests **Tollywood movies** based on your current emotional state — but with a twist!  
+It recommends **movies from the opposite mood** to uplift and improve your emotional well-being.
 
 ---
 
 ## 🔍 Features
 
-- 🧠 Detects emotions from user input using sentiment analysis (TextBlob)
-- 🎭 Supports multiple emotions: happy, sad, angry, fear, and neutral
-- 🎥 Recommends 10 random Tollywood movies **opposite to the detected mood**
-- 🔁 Conversational chatbot experience in the terminal
-- 🗂️ Categorized movie database for each emotion
+- 🧠 Detects user emotion via sentiment analysis (TextBlob)
+- 🎭 Supports moods: happy, sad, angry, fear, and neutral
+- 🎥 Recommends 10 uplifting Tollywood movies per session
+- 🤖 Runs interactively in Google Colab (no setup required)
+- 🗂️ Custom movie database mapped to emotional states
 
 ---
 
@@ -20,37 +20,24 @@ Instead of reinforcing emotions, it smartly suggests movies from the **opposite 
 | Tool         | Purpose                                  |
 |--------------|-------------------------------------------|
 | Python       | Core programming language                 |
-| TextBlob     | NLP-based sentiment analysis              |
-| Random       | To randomly select 10 movies per emotion  |
-| Terminal     | Runs as an interactive CLI chatbot        |
-| Git & GitHub | Version control and hosting               |
+| TextBlob     | Sentiment analysis (NLP)                  |
+| Random       | Random movie sampling                     |
+| Google Colab | Run interactively in the cloud            |
 
 ---
 
-## 🚀 Getting Started
+## 🚀 Getting Started (Google Colab)
 
-### Prerequisites
+1. Open this project in Google Colab.
 
-- Python 3.x  
-  👉 [Download Python](https://www.python.org/downloads/)
-- Install dependencies:
-  
-```bash
-pip install textblob
+2. Install required libraries:
+
+```python
+!pip install textblob
 python -m textblob.download_corpora
-```
-🔧 Running the Chatbot
+3. Paste the chatbot code into a cell and run.. 
 
-
-1. Clone the repository:
-
-   ```bash
-   git clone https://github.com/your-username/weather-dashboard-java.git
-   cd weather-dashboard-java
- 2. Run the script:
-
-   ```bash
-   python movie_chatbot.py
+4. Type a sentence about how you feel and receive movie suggestions!
 
 
    
@@ -58,23 +45,18 @@ python -m textblob.download_corpora
 ## 💡 Example Output
 
 ```
-Welcome to the NLP-Based Tollywood Movie Recommendation Chatbot! 🎬
-
-Hi! Tell me how you're feeling today (type a sentence): I'm feeling down and stressed.
+Hi! Tell me how you're feeling today (type a sentence): I’m very upset and heartbroken.
 
 🔍 Detected Emotion: sad
 
 🎥 To uplift your mood, here are 10 Tollywood movies you might enjoy:
 - Baahubali
 - DJ
-- Gabbar Singh
 - Arya 2
 - Fidaa
-- Julayi
-- Dookudu
 - SVSC
-- Race Gurram
-- Nenu Local
+...
+
 
 ```
 
@@ -83,8 +65,8 @@ Hi! Tell me how you're feeling today (type a sentence): I'm feeling down and str
 ## 📂 Project Structure
 
 ```
-tollywood-movie–chartbot /
-├── movie_chartbot.py
+weather-dashboard–java /
+├── WeatherDashboard.java
 └── README.md
 ```
 
