@@ -1,4 +1,3 @@
-# 🎬 Emotion-Based Tollywood Movie Recommender using NLP (Uplifting Recommendations)
 
 import random
 from textblob import TextBlob
