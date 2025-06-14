@@ -47,7 +47,11 @@ python -m textblob.download_corpora
    ```bash
    git clone https://github.com/your-username/weather-dashboard-java.git
    cd weather-dashboard-java
-2. Run the script:
+ 2. Run the script:
+
+   ```bash
+   python movie_chatbot.py
+
 
    
 
