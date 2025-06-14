@@ -45,8 +45,6 @@ python -m textblob.download_corpora
    ```bash
 git clone https://github.com/your-username/tollywood-movie-chatbot.git
 cd tollywood-movie-chatbot
-
-```
 2. Run the script:
 
    ```bash
