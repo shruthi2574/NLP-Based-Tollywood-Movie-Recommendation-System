@@ -66,8 +66,8 @@ Hi! Tell me how you're feeling today (type a sentence): I’m very upset and hea
 ## 📂 Project Structure
 
 ```
-weather-dashboard–java /
-├── WeatherDashboard.java
+tollywood-movie–chartbot /
+├── moviechartbot.py
 └── README.md
 ```
 
